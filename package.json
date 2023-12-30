@@ -1,0 +1,23 @@
+{
+  "name": "codecademy-personal_budget_i",
+  "version": "1.0.0",
+  "description": "Using Envelope Budgeting principles, your API should allow users to manage budget envelopes and track the balance of each envelope.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch index.js --watch server/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastoico/Codecademy-Personal_budget_I.git"
+  },
+  "author": "sebastoico",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastoico/Codecademy-Personal_budget_I/issues"
+  },
+  "homepage": "https://github.com/sebastoico/Codecademy-Personal_budget_I#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}
