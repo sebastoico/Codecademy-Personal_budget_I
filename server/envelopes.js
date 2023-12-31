@@ -28,6 +28,16 @@ class envelopeBudget {
         };
     };
 
+    deleteEnvelopeById(id) {
+        const envelopeIndex = this.envelopes.findIndex(envelope => envelope.id === id);
+        if (envelopeIndex !== -1) {
+            this.envelopes.splice(envelopeIndex, 1);
+            return true;
+        } else {
+            return false;
+        };
+    };
+
     getEnvelopeById(id) {
         const envelope = this.envelopes.find(envelope => envelope.id === id);
         return envelope;

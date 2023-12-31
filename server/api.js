@@ -47,4 +47,10 @@ apiRouter.put("/:envelopId", (req, res) => {
     };
 });
 
+// Delete envelop by Id
+apiRouter.delete("/:envelopId", (req, res) => {
+    personalBudget.deleteEnvelopeById(req.id);
+    res.status(204).send();
+});
+
 module.exports = apiRouter;
