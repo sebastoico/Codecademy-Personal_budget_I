@@ -16,6 +16,18 @@ class envelopeBudget {
         };
     };
 
+    updateEnvelope(instance) {
+        if (envelope.isValid(instance)) {
+            const envelopeIndex = this.envelopes.findIndex(envelope => envelope.id === instance.id);
+            this.totalBudget -= this.envelopes[envelopeIndex].amount;
+            this.totalBudget += instance.amount;
+            this.envelopes[envelopeIndex] = instance;
+            return instance;
+        } else {
+            throw new Error("Envelope parameters to update are not valid.")
+        };
+    };
+
     getEnvelopeById(id) {
         const envelope = this.envelopes.find(envelope => envelope.id === id);
         return envelope;
