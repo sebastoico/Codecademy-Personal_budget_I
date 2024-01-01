@@ -85,5 +85,9 @@ personalBudget.addEnvelope({
     name: "Entretenimiento",
     amount: 100
 });
+personalBudget.addEnvelope({
+    name: "Ahorro",
+    amount: 200
+});
 
 module.exports = personalBudget;
